@@ -1,0 +1,149 @@
+[
+    {
+        "name": "Sushi",
+        "description": "Fresh sushi rolls with tuna and avocado.",
+        "image": "/assets/different-types-of-sushi-1024x536.jpg",
+        "price": 14.99,
+        "category": "Japanese"
+    },
+    {
+        "name": "Tacos",
+        "description": "Spicy beef tacos with fresh salsa and guacamole.",
+        "image": "/assets/Beef-Tacos.jpg",
+        "price": 8.99,
+        "category": "Mexican"
+    },
+    {
+        "name": "Salad",
+        "description": "A healthy mix of greens, tomatoes, and cucumbers.",
+        "image": "/assets/green-salad.jpg",
+        "price": 7.99,
+        "category": "Salads"
+    },
+    {
+        "name": "Fried Rice",
+        "description": "Stir-fried rice with vegetables and chicken.",
+        "image": "/assets/fried_rice.jpg",
+        "price": 10.99,
+        "category": "Asian"
+    },
+    {
+        "name": "Steak",
+        "description": "Grilled steak served with mashed potatoes.",
+        "image": "/assets/steak.jpg",
+        "price": 19.99,
+        "category": "Meat"
+    },
+    {
+        "name": "Fish and Chips",
+        "description": "Crispy battered fish served with fries.",
+        "image": "/assets/Fish_and_chips_blackpool.jpg",
+        "price": 13.99,
+        "category": "Seafood"
+    },
+    {
+        "name": "Cheeseburger",
+        "description": "A juicy cheeseburger with lettuce and tomato.",
+        "image": "/assets/burger_0.jpg",
+        "price": 10.99,
+        "category": "Burgers"
+    },
+    {
+        "name": "Pancakes",
+        "description": "Fluffy pancakes served with maple syrup.",
+        "image": "/assets/Easy-Fluffy-Pancakes-Recipe-Video.jpg",
+        "price": 6.99,
+        "category": "Breakfast"
+    },
+    {
+        "name": "Ice Cream",
+        "description": "Creamy vanilla ice cream topped with chocolate sauce.",
+        "image": "/assets/ice-cream.jpg",
+        "price": 4.99,
+        "category": "Desserts"
+    },
+    {
+        "name": "Caesar Salad",
+        "description": "Crisp romaine lettuce with Caesar dressing and croutons.",
+        "image": "/assets/229063-Classic-Restaurant-Caesar-Salad-ddmfs-4x3-231-89bafa5e54dd4a8c933cf2a5f9f12a6f.jpg",
+        "price": 8.49,
+        "category": "Salads"
+    },
+    {
+        "name": "BBQ Chicken",
+        "description": "Grilled chicken with BBQ sauce and coleslaw.",
+        "image": "/assets/bbg-chicken.jpg",
+        "price": 12.99,
+        "category": "Meat"
+    },
+    {
+        "name": "Pasta Primavera",
+        "description": "Pasta with fresh vegetables and olive oil.",
+        "image": "/assets/pasta-primavera-TRR-10-of-19.jpg",
+        "price": 11.49,
+        "category": "Italian"
+    },
+    {
+        "name": "Quiche",
+        "description": "Savory quiche filled with spinach and cheese.",
+        "image": "/assets/ham-and-cheese-quiche-22-1200.jpg",
+        "price": 9.99,
+        "category": "Breakfast"
+    },
+    {
+        "name": "Margarita Pizza",
+        "description": "Classic pizza topped with fresh mozzarella and basil.",
+        "image": "/assets/mar-pizza.jpg",
+        "price": 11.99,
+        "category": "Italian"
+    },
+    {
+        "name": "Chicken Curry",
+        "description": "Spicy chicken curry served with rice.",
+        "image": "/assets/46822-indian-chicken-curry-ii-DDMFS-4x3-39160aaa95674ee395b9d4609e3b0988.jpg",
+        "price": 13.49,
+        "category": "Indian"
+    },
+    {
+        "name": "Burrito",
+        "description": "A large burrito filled with beans, rice, and meat.",
+        "image": "/assets/AS-Burrito-vzhk-superJumbo.jpg",
+        "price": 9.99,
+        "category": "Mexican"
+    },
+    {
+        "name": "Chocolate Cake",
+        "description": "Rich chocolate cake with a creamy frosting.",
+        "image": "/assets/easy_chocolate_cake_31070_16x9.jpg",
+        "price": 5.99,
+        "category": "Desserts"
+    },
+    {
+        "name": "Fruit Smoothie",
+        "description": "A refreshing smoothie made with mixed fruits.",
+        "image": "/assets/Fruit-Smoothie.jpg",
+        "price": 4.49,
+        "category": "Beverages"
+    },
+    {
+        "name": "Veggie Burger",
+        "description": "A delicious plant-based burger with fresh toppings.",
+        "image": "/assets/20231204-SEA-VeganBurger-FredHardy-00-dbf603c78b694bfd99489b85ab44f4c4.jpg",
+        "price": 10.49,
+        "category": "Burgers"
+    },
+    {
+        "name": "Pita and Hummus",
+        "description": "Warm pita bread served with creamy hummus.",
+        "image": "/assets/hummus_with_pita.jpg",
+        "price": 5.49,
+        "category": "Appetizers"
+    },
+    {
+        "name": "Spaghetti Bolognese",
+        "description": "Classic spaghetti topped with a rich meat sauce.",
+        "image": "/assets/spaghetti.jpg",
+        "price": 10.99,
+        "category": "Italian"
+    }
+]

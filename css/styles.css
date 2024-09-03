@@ -1,0 +1,239 @@
+body {
+    font-family: cursive, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Fade-in effect */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+.navbar {
+    background-color: #ff4d06;
+    color: #fff;
+}
+
+.navbar a img {
+    height: auto;
+    width: 100px; /* Adjust logo size */
+    transition: transform 0.25s ease; /* Ensure smooth scaling */
+}
+
+.navbar a img:hover {
+    transform: scale(1.3); /* Scale up on hover */
+}
+
+.navbar .nav-link {
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for nav links and transform */
+    position: relative; /* Relative positioning for pseudo-elements */
+    margin-left: 20px; /* Adjust margin for better spacing */
+    margin-right: 20px; /* Adjust margin for better spacing */
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffd650; /* Lighter orange color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.navbar .nav-link:hover {
+    color: #ffd650; /* Lighter orange color on hover */
+    transform: translateY(-2px); /* Move link slightly upward on hover */
+}
+
+.navbar .nav-link:hover::before {
+    width: 100%; /* Expand the pseudo-element to full width on hover */
+}
+
+.navbar .dropdown-toggle::after {
+    transition: transform 0.3s; /* Smooth transition for dropdown arrow */
+}
+
+.navbar .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg); /* Rotate dropdown arrow on open */
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    background-color: #ff8a50; /* Dropdown background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for dropdown */
+    opacity: 0;
+    transform: translateY(-10px); /* Start slightly above */
+    pointer-events: none; /* Disable pointer events until dropdown is open */
+    visibility: hidden; /* Hide dropdown initially */
+    min-width: 300px; /* Set a minimum width for the dropdown */
+    font-weight: bold; /* Bold text for dropdown items */
+}
+
+.navbar .dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+    pointer-events: auto; /* Enable pointer events when dropdown is open */
+    visibility: visible; /* Make dropdown visible */
+}
+
+.navbar .dropdown-item {
+    background-color: #ffd650; /* Default background color for dropdown items */
+    transition: background-color 0.25s ease; /* Smooth transition for dropdown items */
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #ff8a50; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.cart-dropdown-item {
+    display: flex; /* Use flexbox for cart dropdown items */
+    justify-content: space-between; /* Distribute elements with space between */
+    align-items: center; /* Center items vertically */
+}
+
+.cart-dropdown-item .btn {
+    margin-left: 10px; /* Add some spacing between buttons */
+}
+
+.hero-section {
+    background-image: url('/assets/top-view-arrangement-with-salad-boxes-sauce.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+}
+
+.hero-section .container {
+    z-index: 1;
+}
+
+.card {
+    transition: transform 0.2s; /* Smooth transition for card hover effect */
+    height: 100%; /* Ensure card takes full height */
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.card-img-top {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.card-body {
+    flex-grow: 1; /* Allow card body to grow and fill space */
+    display: flex; /* Use flexbox for card body layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Distribute elements with space between */
+}
+
+.card-body button {
+    background-color: #ff4d06; /* Button background color */
+}
+
+.card-body button:hover {
+    background-color: #e03e00; /* Darker shade on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text for footer */
+    padding: 20px 0; /* Add some padding for better spacing */
+    width: 100%; /* Make footer full width */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-in effect for menu items */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Fade-in effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .navbar .nav-link {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+
+    .hero-section .lead {
+        font-size: 1rem; /* Adjust lead text size for mobile */
+    }
+
+    .card-img-top {
+        height: 150px; /* Reduce image height for smaller screens */
+    }
+}
+.avatar {
+    width: 30px; /* Set the width of the avatar */
+    height: 30px; /* Set the height of the avatar */
+    border-radius: 50%; /* Make it circular */
+    background-color: #007bff; /* Background color for the avatar */
+    color: white; /* Text color */
+    display: flex; /* Use flexbox to center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-weight: bold; /* Make the text bold */
+    margin-right: 5px; /* Spacing between avatar and username */
+}
+
+.dropdown-menu {
+    border: none;
+    background-color: #ff8a50; /* Dropdown background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for dropdown */
+    opacity: 0;
+    transform: translateY(-10px); /* Start slightly above */
+    pointer-events: none; /* Disable pointer events until dropdown is open */
+    visibility: hidden; /* Hide dropdown initially */
+    min-width: 200px; /* Set a minimum width for the dropdown */
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+    pointer-events: auto; /* Enable pointer events when dropdown is open */
+    visibility: visible; /* Make dropdown visible */
+}
+
+.dropdown-item.disabled {
+    color: #6c757d; /* Disable text color for username */
+    cursor: default; /* Remove cursor pointer for username */
+}
+#userDropdown {
+    cursor: default; /* Change cursor to default */
+}
+
+#userDropdown:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+#userDropdown::after {
+    display: none; /* Hide the dropdown arrow */
+}
